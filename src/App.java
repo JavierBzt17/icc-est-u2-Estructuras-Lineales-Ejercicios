@@ -12,7 +12,8 @@ public class App {
         StackSorter stackSorter = new StackSorter();
         runStackSorter();
 
-        
+        QueuePalindrome queuePalindrome = new QueuePalindrome();
+        runQueuePalindrome();
     }
 
     
@@ -44,6 +45,20 @@ public class App {
         
         System.out.println("Stack ordenado: " + stack);
         System.out.println("Tope actual: " + stack.peek());
+        System.out.println("\n");
+    }
+
+    private static void runQueuePalindrome() {
+        System.out.println("Ejercicio 3");
+        QueuePalindrome palindromeChecker = new QueuePalindrome();
+
+        String word1 = "radar";
+        String word2 = "java";
+        String word3 = "Ana";
+
+        System.out.println("Es palíndromo " + word1 + ": " + palindromeChecker.isPalindrome(word1));
+        System.out.println("Es palíndromo " + word2 + ": " + palindromeChecker.isPalindrome(word2));
+        System.out.println("Es palíndromo " + word3 + ": " + palindromeChecker.isPalindrome(word3));
         System.out.println("\n");
     }
 }
